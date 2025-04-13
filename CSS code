@@ -1,0 +1,119 @@
+/* General Styles */
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #c9e4e4; 
+    line-height: 1.6;
+    color: #444;
+}
+
+
+.header {
+    background-color: #10e7c3; 
+    color: white; /* Text remains white for contrast */
+    padding: 20px;
+}
+
+nav {
+    display: flex; /* Flexbox for navigation bar */
+    justify-content: center; /* Centered the menu items */
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Flexbox for horizontal menu */
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white; /* White text for contrast */
+}
+
+.menu a:hover {
+    color: #2ecc71; /* Green hover effect */
+}
+
+
+main {
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 20px; 
+    padding: 20px;
+}
+
+.about-me, .interests, .projects, .contact-me {
+    margin: auto; 
+    padding: 20px;
+    background-color: #d5e5e5; 
+    border-radius: 10px; 
+}
+
+
+.skills-container {
+    display: flex; 
+    justify-content: space-between; 
+}
+
+.skills-container .education, .skills-container .programming-languages {
+    width: 45%; 
+}
+
+/* Programming Languages Styling */
+.python {
+    color: #ff5733; 
+}
+
+.mysql {
+    color: #3498db; 
+}
+
+.html {
+    color: #f39c12; 
+}
+
+
+.contact-me a {
+    color: #3498db; 
+    text-decoration: none; 
+}
+
+.contact-me a:hover {
+    color: #2ecc71; 
+}
+
+.footer {
+    background-color: #333; /* Dark footer for contrast */
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+
+
+/* Mobile max-width 600px - Single-column layout and stacked navigation menu */
+@media screen and (max-width: 600px) {
+    nav ul {
+        flex-direction: column; /* Stack navigation items vertically */
+        align-items: center;
+        gap: 10px; 
+        padding-bottom: 10px;
+        text-align:center
+     }
+
+.skills-container{
+flex-direction : column ; 
+align-items:center ;
+gap :10 px ;
+}
+.skills-container section{
+width :100% ;
+text-align:center ;
+}
+}
